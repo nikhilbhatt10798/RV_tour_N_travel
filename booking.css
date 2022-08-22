@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/wp2500536.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.nav-links i {
+    display: none;
+    color: #0e1629;
+}
+
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #253744;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .nav-links i {
+        cursor: pointer;
+        ;
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.footer p {
+    color: #253744;
+    font-size: medium;
+}
+
+.icons {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+#heart {
+    color: #f44336;
+}
+
+.footer a {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+.icons i {
+    color: #253744;
+}
+
+.sub-header {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/66.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+.ride {
+    color: #f44336;
+}
+
+
+
+
+/*...........Booking form...........................*/
+body {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container {
+    background-color: #fafafa;
+    margin: 200px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-time {
+    background-color: rgba(0, 0, 0, .95);
+    padding: 50px;
+    outline: 3px dashed #008ff5;
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.heading-days {
+    color: #998100;
+    font-size: 50px;
+}
+
+.heading-phone {
+    font-size: 20px;
+}
+
+
+.container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #000;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+form p {
+    font-weight: 600;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+select {
+    padding: 10px 15px;
+}
+
+.bbttnn {
+    background-color: #253744;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-redius: 100px;
+    -ms-border-redius: 100px;
+    -o-border-redius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.bbttnn:hover {
+    transform: scale(1.03);
+    color: aqua;
+}
+
+
+.booking h4 {
+    margin-top: 20%;
+}
+
+
+
+
+@media(max-width: 650px) {}
